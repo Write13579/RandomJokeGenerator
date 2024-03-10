@@ -28,9 +28,18 @@ body {
   border: none;
   border-radius: 20px;
   color: hsl(0, 100%, 90%);
-  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(310, 100%, 42%);
   cursor: pointer;
   margin-top: 20px;
+  transition: scale 0.1s ease-in-out, background-color 0.05s ease-in-out;
+}
+
+#btn:hover {
+  scale: 96%;
+}
+
+#btn:active {
+  background-color: hsl(310, 100%, 32%);
 }
 
 span {
@@ -42,4 +51,17 @@ span {
   color: azure;
   word-wrap: break-word;
   line-height: 35px;
+}
+
+.fade {
+  animation: fadeIn 0.6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
